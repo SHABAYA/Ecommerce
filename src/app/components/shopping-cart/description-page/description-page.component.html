@@ -1,0 +1,21 @@
+<!-- <p>{{dialogData.name}}</p>
+<pre>{{dialogData | json}}</pre> -->
+
+<div class="card shadow-large">
+    <p class="card-text">
+        <button type="button" class="btn btn-sm btn-outline-danger product-btn" mat-button mat-dialog-close>X</button>
+        <strong>{{dialogData.name}}</strong>
+    </p>
+    <img class="bd-placeholder-img card-img-top p-2" height="190px" [src]="dialogData.imagePath"
+        style="object-fit: cover" />
+    <div class="card-body">
+        <p class="card-text"><strong>{{dialogData.price | currency:"$"}}</strong></p>
+        <p class="card-text">{{dialogData.description}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- <div class="btn-group">
+                
+            </div> -->
+
+        </div>
+    </div>
+</div>
