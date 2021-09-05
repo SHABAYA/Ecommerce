@@ -20,10 +20,6 @@ export class DescriptionPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // handleAddToCart(data:any) {
-  //   this.datastore.setData(data);
-  // }
-
   
 
 }

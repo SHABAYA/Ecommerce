@@ -37,7 +37,7 @@ export class CartComponent implements OnInit {
     if (undefined == item) {
       this.cartItems.push({
         id: data['id'],
-        productName: data['name'],
+        name: data['name'],
         qty: 1,
         price: data['price']
       })
