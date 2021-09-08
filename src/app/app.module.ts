@@ -29,7 +29,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     CartComponent,
     CartItemComponent,
     ProductItemComponent,
-    DescriptionPageComponent
+    DescriptionPageComponent,
   ],
   imports: [
     BrowserModule,

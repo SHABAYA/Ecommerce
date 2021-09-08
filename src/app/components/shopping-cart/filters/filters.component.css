@@ -1,0 +1,4 @@
+.card-header, .card-body{
+    float: left;
+    margin-left: 10px;
+}

@@ -1,7 +1,7 @@
 import { Component, Input, NgModule, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { DataService } from 'src/app/services/data.service';
-import {MatDialog} from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DescriptionPageComponent } from '../../description-page/description-page.component';
 
 
@@ -15,11 +15,11 @@ export class ProductItemComponent implements OnInit {
   @Input() productItem!: Product;
 
   constructor(private datastore: DataService, public dialog: MatDialog) {
-    this.productItem = new Product(1,'leman shoes','Leman shoes llc',230,'');
-   }
+    this.productItem = new Product(1, 'leman shoes', 'Leman shoes llc', 230, '');
+  }
 
-  openDescription(){
-    this.dialog.open(DescriptionPageComponent,{data:this.productItem});
+  openDescription() {
+    this.dialog.open(DescriptionPageComponent, { data: this.productItem });
   }
 
 
@@ -27,7 +27,7 @@ export class ProductItemComponent implements OnInit {
   }
 
   handleAddToCart() {
-  this.datastore.setData(this.productItem);    
+    this.datastore.setData({ product: this.productItem, quantity: 1 });
     return true;
   }
 }
